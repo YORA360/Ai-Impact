@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #001a0e;
+  --foreground: #ededed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* WARNA AIMPACT */
+  --color-aimpact-green: #004124;
+  --color-aimpact-dark: #002917;
+  --color-aimpact-gold: #F8C638;
+  --color-aimpact-goldlight: #ffeec2;
+}
+
+/* Gunakan @utility (tanpa titik di depan namanya) */
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(248, 198, 56, 0.1);
+}
+
+
+@layer utilities {
+  .animate-glow-gold {
+    /* Membuat bayangan cahaya berlapis */
+    text-shadow: 0 0 15px rgba(248, 198, 56, 0.6),
+      0 0 30px rgba(248, 198, 56, 0.4);
+    animation: glow-pulse 2s infinite alternate;
+  }
+
+  @keyframes glow-pulse {
+    from {
+      filter: drop-shadow(0 0 5px rgba(248, 198, 56, 0.4));
+    }
+
+    to {
+      filter: drop-shadow(0 0 20px rgba(248, 198, 56, 0.8));
+    }
+  }
+}
+
+/* Animasi Berdebar (Heartbeat) */
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      5% { transform: scale(1.05); }
+      10% { transform: scale(1); }
+      15% { transform: scale(1.03); }
+      20% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+
+    /* Animasi Cahaya Luar Berdenyut */
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.3; transform: scale(0.95); }
+      50% { opacity: 0.6; transform: scale(1.05); }
+    }
+
+    /* Animasi Kilatan Cahaya (Shimmer) */
+    @keyframes shimmer {
+      0% { transform: translateX(-150%); }
+      50% { transform: translateX(150%); }
+      100% { transform: translateX(150%); }
+    }
+
+    .animate-heartbeat {
+      animation: heartbeat 3s ease-in-out infinite;
+    }
+
+    .animate-pulse-glow {
+      animation: pulse-glow 2s ease-in-out infinite;
+    }
+
+    .animate-shimmer {
+      animation: shimmer 4s infinite;
+    }
+    
