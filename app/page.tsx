@@ -174,7 +174,7 @@ export default function Home() {
       events: [
         [
           {
-            title: "Kupas Tuntas CV ATS Friendly dan Portfolio dengan AI (AI Fest)",
+            title: "Belum Wisuda, Tapi Sudah Kerja ? Strategi CV ATS FRENDLY Dibantu AI.",
             poster: "/Poster-Class1.jpeg",
             price: "Free",
             date: "02 Maret 2026",
@@ -183,7 +183,7 @@ export default function Home() {
             link: "https://bit.ly/AIMPECT-CAREERCLASS"
           },
           {
-            title: "Merintis Jadi Affiliate dari 0 Sampai Dapetin 1 Juta Pertama (AI Fest)",
+            title: "Bongkar Rahasia 35 Juta Pertama Dari THREADS & SHOPEE.",
             poster: "/Poster-Class2.jpeg",
             price: "Free",
             date: "06 Maret 2026",
@@ -193,12 +193,12 @@ export default function Home() {
           },
 
            {
-            title: "AI Untuk Otomatisasi Administrasi & Persiapan Mengajar 10x Lebih Cepat!",
-            poster: "/AIMPACT.jpeg",
+            title: "Rahasia Guru & Dosen Kerja Efisien Tanpa Ribet dengan AI.",
+            poster: "/Poster-Class3.jpeg",
             price: "Free",
             date: "09 Maret 2026",
             mode: "ONLINE",
-            status: "coming-soon"
+            status: "published",
           },
           {
             title: "Kerjaan 1 Minggu Selesai Dalam 1 Hari dengan Bantuan Workflow Automation ?",
