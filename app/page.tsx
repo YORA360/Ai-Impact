@@ -199,6 +199,7 @@ export default function Home() {
             date: "09 Maret 2026",
             mode: "ONLINE",
             status: "published",
+            link: "https://bit.ly/AIMPACT-EDUCLASS"
           },
           {
             title: "Kerjaan 1 Minggu Selesai Dalam 1 Hari dengan Bantuan Workflow Automation ?",
